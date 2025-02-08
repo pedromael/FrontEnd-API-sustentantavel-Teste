@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODS 12 - Ações Sustentáveis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>ODS 12 - Consumo Sustentável</h1>
+        <p id="alertt"></p>
+
+        <!-- Formulário de Login -->
+        <div id="login-section">
+            <h2>Login</h2>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <button onclick="login()">Entrar</button>
+            <p id="login-message"></p>
+        </div>
+
+        <div id="register-section">
+            <h2>Cadastro</h2>
+            <input type="text" id="name" placeholder="Nome" required>
+            <input type="email" id="email-register" placeholder="Email" required>
+            <input type="password" id="password-register" placeholder="Senha" required>
+            <button onclick="register()">Cadastrar</button>
+            <p id="register-message"></p>
+        </div>
+
+        <!-- Formulário de Cadastro de Ações -->
+        <div id="actions-section" style="display: none;">
+            <h2>Registrar Ação Sustentável</h2>
+            <input type="text" id="title" placeholder="Título da ação">
+            <textarea id="description" placeholder="Descrição"></textarea>
+            <select id="category">
+                <option value="Reciclagem">Reciclagem</option>
+                <option value="Energia">Energia</option>
+                <option value="Água">Água</option>
+                <option value="Mobilidade">Mobilidade</option>
+            </select>
+            <input type="number" id="points" placeholder="Pontos">
+            <button onclick="registerAction()">Registrar</button>
+            <p id="action-message"></p>
+        </div>
+
+        <!-- Lista de Ações -->
+        <div id="actions-list" style="display: none;">
+            <h2>Ações Registradas</h2>
+            <ul id="actions-container"></ul>
+        </div>
+
+    </div>
+    <button id="logaut" onclick="logaut()">logaut</button>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
