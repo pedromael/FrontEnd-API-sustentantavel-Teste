@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8000"; // Altere para a URL do backend se estiver hospedado
+const API_URL = "https://api-sustentavel-com-jwt.onrender.com:8000";
 
 // Função de Login
 async function login() {
